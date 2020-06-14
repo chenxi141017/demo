@@ -177,7 +177,7 @@
     [btn setTitle:@"Jump to Anchor Layout" forState:UIControlStateNormal];
     [btn addTarget:self action:@selector(jumpToAnchorLayoutViewController) forControlEvents:UIControlEventTouchUpInside];
     [view1 addSubview:btn];
-    
+
     NSLayoutConstraint *btnWidth = [NSLayoutConstraint constraintWithItem:btn attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:150];
     NSLayoutConstraint *btnHeight = [NSLayoutConstraint constraintWithItem:btn attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:80];
     NSLayoutConstraint *btnCenterX = [NSLayoutConstraint constraintWithItem:btn attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:view1 attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0];
